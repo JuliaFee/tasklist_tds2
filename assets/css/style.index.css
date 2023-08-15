@@ -34,7 +34,6 @@ input, #add {
 #box1{
     margin-top: 90px;
     background-color: white;
-    height: 200px;
     margin: 0 auto;
     margin-top: 50px;
     align-items: center;
@@ -86,9 +85,11 @@ button:hover{
     align-items: center;
     width: 70%;
 }
-#error_area{
-    color: red;
-    text-align: left;
+.hidden{
+    display: none;
 }
-
-
+#error_area{
+     color: red;
+     text-align: left;
+     padding: 5px;
+}
