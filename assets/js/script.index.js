@@ -1,3 +1,5 @@
+
+let tasks = [];
 class task{
     constructor(id, title, status){
         this.id = id;
@@ -17,13 +19,47 @@ class taskList{
         this.tasks.push(task);
     }
 }
+
+let msg = "";
+
+function showForm() {
+    let showContent = "";
+
+    tasks.forEach((task) => {
+    showContent += `<div id="box2">
+    <div class="form">
+        <div class="div-form">
+            <span id="task">akhsfhadsfjkabkjfbakjf</span>
+        </div>
+       
+        <div class="btns">
+        <button type="button" id="verify" class="btn2">
+        <i class="fa-solid fa-check"></i>
+    </button>
+    <button type="button" id="edit" class="btn2">
+        <i class="fa-solid fa-pen"></i>
+    </button>
+    <button type="button" id="delete" class="btn2">
+        <i class="fa-solid fa-trash"></i>
+    </button>
+</div>
+</div>
+    </div>`
+        
+    });
+}
+
+
+
 function createTask(){
     let title = document.getElementById("areabox1").value;
     let showTask = new task (randomId(), title, false);
 
-    taskList.
-
-    console.log(showTask);
+    
     document.getElementById("areabox1").value = "";
+    console.log(showTask);
+
+
+    showForm();
 }
 
