@@ -21,7 +21,7 @@ body{
 input{
     background-color: #f5f5ff;
     height: 50px;
-    width: 80%;
+    width: 90%;
     font-size: 3vh;
     padding: 1.5rem;
     border-radius: 4vh;
@@ -47,10 +47,16 @@ input, #add {
     height: 40px;
 }
 .form{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     background-color: #f5f5f5;
-    border-radius: 2vh;
-    padding: 0.5rem;
-    margin-top: 4vh;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    margin-top: 0.5rem;
 }
 input, #add, button{
     border-radius: 2vh;
@@ -63,8 +69,19 @@ input, #add, button{
     background-color: blue;
 }
 .btns{
-    text-align: right;
 }
 .form{
     text-align: left;
 }
+
+.div-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+
