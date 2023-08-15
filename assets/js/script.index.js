@@ -20,16 +20,14 @@ class taskList{
     }
 }
 
-let msg = "";
-
 function showForm() {
-    let showContent = "";
+    let msg = "";
 
-    tasks.forEach((task) => {
-    showContent += `<div id="box2">
+    tasks.forEach(() => {
+    msg += `<div id="box2">
     <div class="form">
         <div class="div-form">
-            <span id="task">akhsfhadsfjkabkjfbakjf</span>
+            <span id="task">${this.title}</span>
         </div>
        
         <div class="btns">
@@ -47,6 +45,8 @@ function showForm() {
     </div>`
         
     });
+
+    document.getElementById("hidden").innerHTML = msg;
 }
 
 
