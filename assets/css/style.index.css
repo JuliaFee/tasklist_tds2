@@ -86,5 +86,9 @@ button:hover{
     align-items: center;
     width: 70%;
 }
+#error_area{
+    color: red;
+    text-align: left;
+}
 
 

@@ -23,15 +23,20 @@ const tasks = new TaskList();
 function createTask() {
   let title = document.getElementById("areabox1").value;
   let newTask = new Task(randomId(), title, false);
-
+      
   tasks.addTask(newTask);
 
   document.getElementById("areabox1").value = "";
   
 
   showForm();
-}
+      }
 
+function checkTask(){
+    newTask = new Task(randomId(), title, true);
+    tasks.addTask(newTask);
+    console.log(tasks);
+}
 function showForm() {
   let msg = "";
 
@@ -45,7 +50,7 @@ function showForm() {
             </div>
         
             <div class="btns">
-                <button type="button" id="verify" class="btn2">
+                <button type="button" id="verify" class="btn2" onclick="checkTask()">
                     <i class="fa-solid fa-check"></i>
                 </button>
                 <button type="button" id="edit" class="btn2">
