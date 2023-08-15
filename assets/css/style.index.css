@@ -25,6 +25,7 @@ input{
     font-size: 3vh;
     padding: 1.5rem;
     border-radius: 4vh;
+   
 }
 input, #add {
     border-radius: 2vh;
@@ -60,15 +61,17 @@ input, #add {
 }
 input, #add, button{
     border-radius: 2vh;
-    border: 3vh;
+    border: none;
+}
+button:hover{
+    background-color: #00000056;
+    transition: 0.3s;
 }
 #delete{
     background-color: red;
 }
 #edit{
     background-color: blue;
-}
-.btns{
 }
 .form{
     text-align: left;
