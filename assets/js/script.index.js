@@ -23,7 +23,6 @@ class taskList{
 function showForm() {
     let msg = "";
 
-    tasks.forEach(() => {
     msg += `<div id="box2">
     <div class="form">
         <div class="div-form">
@@ -44,7 +43,7 @@ function showForm() {
 </div>
     </div>`
         
-    });
+    ;
 
     document.getElementById("hidden").innerHTML = msg;
 }
